@@ -68,14 +68,12 @@ public class SimpleClient {
 			String ArrayOfRegnrs[] = {"r 58809", "t Aspirin", "e 7680569190089", "r 51795", "r 45604", 
 					"r 62069", "r 55603", "t Ugaga", "t Lev", "t Elevit"};
 
-			for (int i=0; i<20; ++i) {
-				for (int j=0; j<10; ++j) {
-					out.println(ArrayOfRegnrs[j]);
-					try {
-						Thread.sleep(100);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+			for (int j=0; j<10; ++j) {
+				out.println(ArrayOfRegnrs[j]);
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
 				}
 			}
 			
